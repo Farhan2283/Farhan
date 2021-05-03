@@ -1,26 +1,24 @@
-#!/usr/bin/python2
-# coding=utf-8
-# Written By:OSCAR ALEX
-# Source : Python2"
- 
-#Import module
-try:
-    import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,getpass,mechanize,requests
-    from multiprocessing.pool import ThreadPool
-    from requests.exceptions import ConnectionError
-    from mechanize import Browser
+#coding:utf-8
+#!/user/bin/python2
+#coding by oscar alex
+try: 
+import os,sys,time,datetime­,random,hashlib,re,t­hreading,json,urllib­,cookielib,getpass,m­echanize,requests
+from multiprocessing.pool­ import ThreadPool
+from requests.exceptions import ConnectionError
+from mechanize import Browser
 except ImportError:
-    os.system('pip2 install requests')
-    os.system('pip2 install mechanize')
-    os.system('python2 Farhanali.py ')
+os.system('pip2 install requests')
+os.system('pip2 install mechanize')
+os.system('python2 Farhanali.py')
+try:
+os.mkdir('Farhanali.py')
+except OSError:
+pass
 
-#Browser Setting
-reload(sys)
-sys.setdefaultencoding('utf8')
-br = mechanize.Browser()
-br.set_handle_robots(False)
-br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
-br.addheaders = [('user-agent','Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
+from requests.exceptions import ConnectionError
+bd=random.randint(2e­7, 3e7)
+sim=random.randint(2­e4, 4e4)
+header={'x-fb-connec­tion-bandwidth': repr(bd),'x-fb-sim-T­elkomsel': repr(sim),'x-fb-net-­Telkomsel': repr(sim),'x-fb-conn­ection-quality': 'EXCELLENT','x-fb-co­nnection-type': 'cell.CTRadioAccessT­echnologyLTE','user-­agent':'Mozilla/5.0 (Linux; Android 5.1.1; walleye/Bulid/­LMY48G;wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/­81.0.4044.117 Mobile Safari/­537.36','content-type­': 'application/­x-www-form-urlencoded­','x-fb-http-engine'­: 'Liger'}
 reload(sys)
 def exit():
 	print "[!] Exit"
