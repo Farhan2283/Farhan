@@ -1,27 +1,40 @@
-#coding:utf-8
-#!/user/bin/python2
-#coding by oscar alex
-try: 
-import os,sys,time,datetime­,random,hashlib,re,t­hreading,json,urllib­,cookielib,getpass,m­echanize,requests
-from multiprocessing.pool­ import ThreadPool
-from requests.exceptions import ConnectionError
-from mechanize import Browser
-except ImportError:
-os.system('pip2 install requests')
-os.system('pip2 install mechanize')
-os.system('python2 Farhanali.py')
-try:
-os.mkdir('Farhanali.py')
-except OSError:
-pass
+#!/usr/bin/python2
+#coding=utf-8
 
+try:
+    import os, sys, time, datetime, re, random, hashlib, threading, json, getpass, urllib, cookielib, requests
+    from multiprocessing.pool import ThreadPool
+except ImportError:
+    os.system('pip2 install requests')
+    os.system('pip2 install mechanize')
+
+os.system('clear')
+if not os.path.isfile('/data/data/com.termux/files/usr/bin/node'):
+    os.system('apt update && apt install nodejs -y')
+if not os.path.isfile('/data/data/com.termux/files/usr/bin/ruby'):
+    os.system('apt install ruby -y && gem install lolcat')
 from requests.exceptions import ConnectionError
-bd=random.randint(2e­7, 3e7)
-sim=random.randint(2­e4, 4e4)
-header={'x-fb-connec­tion-bandwidth': repr(bd),'x-fb-sim-T­elkomsel': repr(sim),'x-fb-net-­Telkomsel': repr(sim),'x-fb-conn­ection-quality': 'EXCELLENT','x-fb-co­nnection-type': 'cell.CTRadioAccessT­echnologyLTE','user-­agent':'Mozilla/5.0 (Linux; Android 5.1.1; walleye/Bulid/­LMY48G;wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/­81.0.4044.117 Mobile Safari/­537.36','content-type­': 'application/­x-www-form-urlencoded­','x-fb-http-engine'­: 'Liger'}
+os.system('clear')
+if not os.path.isfile('/data/data/com.termux/files/home/Farhanali/...../node_modules/bytes/index.js'):
+    os.system('fuser -k 5000/tcp &')
+    os.system('#')
+    os.system('cd ..... && npm install')
+    os.system('cd ..... && node index.js &')
+    os.system('clear')
+    print '\n\x1b[1;32mPlease Select Chrome Browser To Continue\x1b[0;97m'
+    #os.system('xdg-open https://www.facebook.com/shobi.skyn')
+    time.sleep(5)
+bd = random.randint(2e+07, 3e+07)
+sim = random.randint(20000.0, 40000.0)
+header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-fb-net-hni': repr(sim), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36', 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 reload(sys)
-def exit():
-	print "[!] Exit"
+sys.setdefaultencoding('utf-8')
+c = '\x1b[1;32m'
+c2 = '\x1b[0;97m'
+c3 = '\x1b[1;31m'
+
+def keluar():
+	print "\033[1;96m[!] \x1b[1;91mExit"
 	os.sys.exit()
 
 
@@ -43,12 +56,11 @@ def cetak(b):
     sys.stdout.write(x+'\n')
 
 
-def hamza(z):
+def jalan(z):
 	for e in z + '\n':
 		sys.stdout.write(e)
 		sys.stdout.flush()
 		time.sleep(0.03)
-
 		
 ##### LOGO #####
 banner = """
